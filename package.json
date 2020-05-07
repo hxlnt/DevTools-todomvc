@@ -5,7 +5,7 @@
     "start": "node ./serve.js",
     "test-playwright": "jest",
     "test-webdriver-selenium4": "pip install selenium==4.0.0a5 && python ./tests/webdriver-selenium4.test.py",
-    "test-webdriver-selenium3": "pip install selenium==3.141 && python ./tests/webdriver-selenium3.test.py"
+    "test-webdriver-selenium3": "pip install msedge-selenium-tools selenium==3.141 && python ./tests/webdriver-selenium3.test.py"
   },
   "dependencies": {
     "@types/classnames": "^2.2.6",
