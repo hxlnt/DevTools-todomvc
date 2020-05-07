@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 
 describe('todos', () => {
     beforeAll(async () => {
-        // const browser = await puppeteer.launch({
+        // const browser = await chromium.launch({
         //     executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
         // });
         // const page = await browser.newPage(); 
