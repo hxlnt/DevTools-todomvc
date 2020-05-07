@@ -1,12 +1,14 @@
 const { chromium } = require('playwright');
 
+const EDGE_PATH = 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
+
 describe('todos', () => {
+    let browser, page;
+
     beforeAll(async () => {
-        // const browser = await chromium.launch({
-        //     executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge Dev\\Application\\msedge.exe'
-        // });
-        // const page = await browser.newPage(); 
-        await page.goto('http://localhost:4200')
+        browser = await chromium.launch({ executablePath: EDGE_PATH });
+        page = await browser.newPage();
+        await page.goto('http://localhost:4200');
     });
   
     afterAll( async () => {
