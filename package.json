@@ -3,8 +3,9 @@
   "scripts": {
     "build": "webpack --watch --config ./js/webpack.config.js",
     "start": "node ./serve.js",
-    "test-puppeteer": "jest",
-    "test-webdriver": "python ./tests/webdriver.test.py"
+    "test-playwright": "jest",
+    "test-webdriver-selenium4": "pip install selenium==4.0.0a5 && python ./tests/webdriver-selenium4.test.py",
+    "test-webdriver-selenium3": "pip install msedge-selenium-tools selenium==3.141 && python ./tests/webdriver-selenium3.test.py"
   },
   "dependencies": {
     "@types/classnames": "^2.2.6",
@@ -26,7 +27,7 @@
     "jest": "^24.9.0",
     "node-sass": "^4.12.0",
     "node-static": "^0.7.11",
-    "puppeteer": "^1.19.0",
+    "playwright": "^1.0.0",
     "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
     "ts-loader": "^6.0.4",
